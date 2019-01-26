@@ -378,7 +378,7 @@ var QuillComponent = createClass({
 			// is trying to send it back as `value`, preventing a likely loop.
 			this.lastDeltaChangeSet = delta;
 
-			this.setState({ value: nextContents }, () => {
+			this.setState({ value: nextContents }, function() {
 				if (this.props.onChange) {
 					this.props.onChange(value, delta, source, editor);
 				}
