@@ -21,6 +21,7 @@
     "build": "make build",
     "prepack": "make build",
     "postpack": "make clean",
+    "postinstall": "make build",
     "prepublish": "make build",
     "postpublish": "make clean"
   },
